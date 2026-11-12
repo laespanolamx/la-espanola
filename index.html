@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Española | Trapeadores y Artículos de Limpieza</title>
+<meta name="description" content="La Española: producción de trapeadores y venta de artículos de limpieza. Trapeadores de producción propia, pedidos por WhatsApp.">
+<meta name="theme-color" content="#14335c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="La Española | Trapeadores y Artículos de Limpieza">
+<meta property="og:description" content="Producción de trapeadores y artículos de limpieza. Pide por WhatsApp.">
+<meta property="og:image" content="https://laespanolamx.github.io/la-espanola/img/logo.png">
+<link rel="icon" href="img/icono.jpg">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14335c;--navy2:#0d2442;--red:#c8102e;--red2:#a50d26;--amber:#f5a623;--bg:#fffaf4;--card:#ffffff;--ink:#22262e;--mut:#5f6672;--line:#f0e3d3;--wa:#22c064;--wa2:#1eb85a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Poppins',sans-serif;line-height:1.2;color:var(--navy)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(13,36,66,.97);backdrop-filter:blur(6px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff}
+.logo img{width:52px;height:52px;border-radius:50%;background:#fff;padding:2px}
+.logo .nm{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.15rem;line-height:1.1}
+.logo .nm small{display:block;color:var(--amber);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+nav{display:flex;gap:20px}
+nav a{color:#dbe4f0;font-weight:600;font-size:.95rem}
+nav a:hover{color:#fff}
+@media(max-width:760px){nav{display:none}}
+section{padding:64px 0}
+.kicker{text-align:center;text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;font-weight:700;color:var(--red)}
+h2{font-size:2rem;text-align:center;margin:8px 0 10px}
+.lead{text-align:center;color:var(--mut);max-width:46rem;margin:0 auto 36px}
+.hero{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 60%,#7a0c20 130%);color:#fff;padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.hero .kick{display:inline-block;background:rgba(245,166,35,.18);color:var(--amber);border:1px solid rgba(245,166,35,.45);padding:6px 14px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.hero h1{color:#fff;font-size:2.6rem;margin:16px 0 14px}
+.hero h1 span{color:var(--amber)}
+.hero p.sub{color:#d3deeb;font-size:1.06rem;max-width:32rem}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.badges span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:999px;font-size:.86rem;font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-weight:700;padding:14px 24px;border-radius:12px;border:0;cursor:pointer;font-size:1rem;transition:.2s}
+.btn:hover{background:var(--red2)}
+.btn.wa{background:var(--wa)}
+.btn.wa:hover{background:var(--wa2)}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff}
+.btn.ghost:hover{border-color:#fff}
+.hero .photo{border-radius:20px;overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.35);border:4px solid rgba(255,255,255,.14)}
+.hero .photo img{width:100%;height:100%;object-fit:cover}
+.star{background:linear-gradient(140deg,var(--red),var(--red2));border-radius:22px;color:#fff;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;box-shadow:0 18px 38px rgba(165,13,38,.28)}
+@media(max-width:860px){.star{grid-template-columns:1fr}}
+.star .txt{padding:38px 36px}
+.star h3{color:#fff;font-size:1.7rem;margin-bottom:12px}
+.star p{color:#f6d9de;margin-bottom:20px}
+.star img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:56rem;margin:0 auto}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(20,51,92,.07)}
+.pcard img{width:100%;height:210px;object-fit:cover}
+.pcard .b{padding:22px 24px 26px}
+.pcard h3{font-size:1.25rem;margin-bottom:8px}
+.pcard p{color:var(--mut);margin-bottom:16px}
+.mini{display:inline-flex;align-items:center;gap:6px;background:var(--wa);color:#fff;font-weight:700;padding:10px 18px;border-radius:10px;font-size:.93rem}
+.mini:hover{background:var(--wa2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:64rem;margin:0 auto}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;text-align:center}
+.step .n{width:46px;height:46px;margin:0 auto 14px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Poppins',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+.step h3{font-size:1.12rem;margin-bottom:6px}
+.step p{color:var(--mut);font-size:.95rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.info p{margin-bottom:12px;font-size:1.02rem}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 22px rgba(20,51,92,.07)}
+form input,form select,form textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;margin-bottom:14px;background:#fffdf9;color:var(--ink)}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--amber);border-color:transparent}
+form .btn{width:100%;justify-content:center}
+footer{background:var(--navy2);color:#b9c7da;padding:34px 0;text-align:center;font-size:.94rem}
+footer a{color:#fff;font-weight:600}
+.floatwa{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 24px rgba(0,0,0,.28)}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"La Española","description":"Producción de trapeadores y venta de artículos de limpieza.","image":"https://laespanolamx.github.io/la-espanola/img/logo.png","telephone":"+52-33-2044-2574","areaServed":"México"}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio">
+      <img src="img/icono.jpg" alt="Logotipo de La Española">
+      <span class="nm">La Española<small>Artículos de limpieza</small></span>
+    </a>
+    <nav>
+      <a href="#trapeadores">Trapeadores</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#pedido">Haz tu pedido</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio" style="padding-top:56px">
+  <div class="wrap">
+    <div>
+      <span class="kick">Producción de trapeadores</span>
+      <h1>Trapeadores de <span>producción propia</span> y todo para la limpieza</h1>
+      <p class="sub">En La Española producimos trapeadores y vendemos artículos de limpieza para tu hogar y tu negocio. Haz tu pedido por WhatsApp y te cotizamos al momento.</p>
+      <div class="badges"><span>✔ Producción propia</span><span>✔ Artículos de limpieza</span><span>✔ Pedidos por WhatsApp</span></div>
+      <div class="cta">
+        <a class="btn" href="#trapeadores">🧹 Ver los trapeadores</a>
+        <a class="btn wa" href="https://wa.me/523320442574?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20La%20Espa%C3%B1ola" target="_blank" rel="noopener">💬 Pedir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="photo"><img src="img/hero.webp" alt="Producción de trapeadores de La Española"></div>
+  </div>
+</section>
+
+<section id="trapeadores">
+  <div class="wrap">
+    <div class="kicker">Producto estrella</div>
+    <h2>Nuestros trapeadores</h2>
+    <p class="lead">Lo que nos distingue: los producimos nosotros mismos.</p>
+    <div class="star">
+      <div class="txt">
+        <h3>Trapeadores de producción propia 🧹</h3>
+        <p>Trapeadores de hilo de algodón hechos en nuestro taller, en variedad de colores, para el hogar, la oficina y el negocio. Pide uno o por mayoreo: escríbenos y te cotizamos precio y disponibilidad al momento.</p>
+        <a class="btn wa" href="https://wa.me/523320442574?text=Hola%2C%20quiero%20cotizar%20TRAPEADORES" target="_blank" rel="noopener">💬 Cotizar trapeadores</a>
+      </div>
+      <img src="img/trapeadores.webp" alt="Trapeadores de colores de producción propia">
+    </div>
+  </div>
+</section>
+
+<section id="catalogo" style="background:#fff;padding-top:56px;padding-bottom:56px">
+  <div class="wrap">
+    <div class="kicker">Catálogo</div>
+    <h2>Lo que vendemos</h2>
+    <p class="lead">Producción propia y artículos de limpieza. Los precios se cotizan por WhatsApp según cantidad.</p>
+    <div class="grid">
+      <div class="pcard">
+        <img src="img/trapeadores.webp" alt="Trapeadores de hilo de algodón">
+        <div class="b">
+          <h3>🧹 Trapeadores</h3>
+          <p>Nuestro producto estrella, de producción propia: trapeadores de hilo de algodón en variedad de colores, para hogar y negocio.</p>
+          <a class="mini" href="https://wa.me/523320442574?text=Hola%2C%20quiero%20pedir%20TRAPEADORES" target="_blank" rel="noopener">💬 Pedir trapeadores</a>
+        </div>
+      </div>
+      <div class="pcard">
+        <img src="img/hero.webp" alt="Artículos de limpieza">
+        <div class="b">
+          <h3>🧴 Artículos de limpieza</h3>
+          <p>Además de los trapeadores, contamos con artículos de limpieza para tu hogar y tu negocio. Pregunta por lo que necesitas y te confirmamos disponibilidad.</p>
+          <a class="mini" href="https://wa.me/523320442574?text=Hola%2C%20quiero%20pedir%20ART%C3%8DCULOS%20DE%20LIMPIEZA" target="_blank" rel="noopener">💬 Pedir artículos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Así de fácil es</div>
+    <h2>Pide en 3 pasos</h2>
+    <p class="lead">Sin registros ni complicaciones: todo por WhatsApp.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Nos escribes</h3><p>Cuéntanos qué necesitas: trapeadores, artículos de limpieza o ambos, y la cantidad.</p></div>
+      <div class="step"><div class="n">2</div><h3>Te cotizamos</h3><p>Te confirmamos precio y disponibilidad al momento, sin compromiso.</p></div>
+      <div class="step"><div class="n">3</div><h3>Recibes tu pedido</h3><p>Acordamos contigo la entrega de tu pedido y listo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="background:#fff;padding-top:56px;padding-bottom:64px">
+  <div class="wrap split">
+    <div class="info">
+      <div class="kicker" style="text-align:left">Estamos para atenderte</div>
+      <h2 style="text-align:left">Contacto</h2>
+      <p>💬 WhatsApp: <b>33 2044 2574</b></p>
+      <p>🧹 Producción de trapeadores y venta de artículos de limpieza.</p>
+      <p style="margin-top:18px"><a class="btn" href="la-espanola.apk" download>📲 Descargar la app</a></p>
+    </div>
+    <form id="pedido">
+      <input id="fNombre" type="text" placeholder="Tu nombre" required>
+      <select id="fProducto">
+        <option>Trapeadores</option>
+        <option>Artículos de limpieza</option>
+        <option>Trapeadores y artículos de limpieza</option>
+        <option>Otro producto</option>
+      </select>
+      <input id="fCantidad" type="text" placeholder="Cantidad que necesitas (ej. 10 piezas)">
+      <textarea id="fMsg" rows="4" placeholder="Tu mensaje o lo que buscas" required></textarea>
+      <button class="btn wa" type="submit">💬 Enviar pedido por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:#fff">La Española</b> · Trapeadores y artículos de limpieza</p>
+    <p style="margin-top:8px"><a href="https://wa.me/523320442574" target="_blank" rel="noopener">WhatsApp 33 2044 2574</a></p>
+  </div>
+</footer>
+
+<a class="floatwa" href="https://wa.me/523320442574?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20La%20Espa%C3%B1ola" target="_blank" rel="noopener" aria-label="WhatsApp de La Española">💬</a>
+
+<script>
+if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').then(r => r.update()).catch(() => {}); }); }
+document.getElementById('pedido').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const n = document.getElementById('fNombre').value.trim();
+  const p = document.getElementById('fProducto').value;
+  const c = document.getElementById('fCantidad').value.trim();
+  const m = document.getElementById('fMsg').value.trim();
+  let t = 'Hola, soy ' + n + '. Quiero pedir: ' + p + '.';
+  if (c) t += ' Cantidad: ' + c + '.';
+  t += ' ' + m;
+  window.open('https://wa.me/523320442574?text=' + encodeURIComponent(t), '_blank');
+});
+</script>
+</body>
+</html>
